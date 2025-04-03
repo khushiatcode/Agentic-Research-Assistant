@@ -1,0 +1,13 @@
+langchain
+wikipedia
+langchain-community
+langchain-openai
+langchain-anthropic
+python-dotenv
+pydantic
+duckduckgo-search
+requests
+beautifulsoup4
+numpy
+regex
+streamlit

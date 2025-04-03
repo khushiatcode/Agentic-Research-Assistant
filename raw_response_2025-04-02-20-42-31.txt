@@ -1,0 +1,1 @@
+{'query': '', 'output': "To assist you effectively, I need a specific topic or question to research. Please provide the details of what you'd like me to investigate."}

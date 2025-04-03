@@ -1,0 +1,249 @@
+# Advanced AI Research Assistant
+## Technical Documentation
+
+### Project Overview
+This project implements an advanced AI research assistant that combines multiple information sources, sophisticated reasoning capabilities, and specialized tools to conduct comprehensive research on any topic. The system uses the DeepSeek language model through OpenRouter API and integrates various tools for information gathering and analysis.
+
+### System Architecture
+
+1. Core Components
+   - Main Controller (main.py)
+   - Tool Collection (tools.py)
+   - Advanced Tools (mcp_tools.py)
+   - Environment Configuration (.env)
+
+2. Dependencies
+   - langchain ecosystem (core, community, openai, anthropic)
+   - wikipedia
+   - python-dotenv
+   - pydantic
+   - duckduckgo-search
+   - requests
+   - beautifulsoup4
+   - numpy
+   - regex
+
+### Tool Categories
+
+1. Basic Research Tools
+   - Search: DuckDuckGo web search with rate limiting
+   - Wikipedia: Direct access to Wikipedia articles
+   - WebScraper: Basic web content extraction
+   - Calculator: Mathematical calculations
+   - WeatherInfo: Current weather data
+   - NewsSearch: Latest news articles
+   - RedditSearch: Reddit content access
+   - SaveResearch: File output management
+
+2. Advanced Research Tools
+   - AdvancedWebScraper: Sophisticated web content extraction
+   - AdvancedWebSearch: Multi-page content analysis
+   - DeepWebCrawler: Website exploration
+   - DeepResearch: AI-powered comprehensive research
+   - SequentialThinking: Step-by-step reasoning
+
+### Key Features
+
+1. Intelligent Query Processing
+   - Automatic complexity detection
+   - Tool selection based on query type
+   - Rate limiting and caching for API calls
+   - Fallback mechanisms for all tools
+
+2. Advanced Research Capabilities
+   - Multi-source information gathering
+   - Step-by-step reasoning for complex topics
+   - Comprehensive web scraping
+   - Deep research synthesis
+
+3. Output Management
+   - Structured research reports
+   - Multiple file formats
+   - Automatic file organization
+   - Continuous research logging
+
+4. Error Handling
+   - Rate limit management
+   - Fallback implementations
+   - Robust error recovery
+   - Strange character cleanup
+
+### Technical Implementation Details
+
+1. Query Processing Flow
+   ```
+   User Query → Complexity Analysis → Tool Selection → 
+   Information Gathering → Analysis → Report Generation → File Output
+   ```
+
+2. Rate Limiting Implementation
+   - Minimum delay between searches (5 seconds)
+   - Exponential backoff for failures
+   - Query optimization
+   - Result caching
+
+3. Research Report Structure
+   - Topic identification
+   - Summary generation
+   - Key findings extraction
+   - Detailed analysis
+   - Source documentation
+   - Tool usage tracking
+   - Limitations assessment
+   - Follow-up suggestions
+
+4. File Management System
+   - Timestamped research files
+   - Continuous research log
+   - Raw response storage
+   - Formatted report generation
+
+### Environment Setup
+
+1. Required Environment Variables
+   ```
+   DEEPSEEK_API_KEY=your-api-key
+   WEATHER_API_KEY=your-weather-api-key
+   ```
+
+2. Optional Environment Variables
+   ```
+   OPENAI_API_KEY=your-openai-key
+   ANTHROPIC_API_KEY=your-anthropic-key
+   ```
+
+### Usage Instructions
+
+1. Basic Usage
+   ```python
+   python main.py
+   ```
+   Then enter your research query when prompted.
+
+2. Advanced Usage
+   - Run in Cursor environment for full tool access
+   - Use /run main.py in Cursor chat
+   - Or use %cursor run main.py in Jupyter notebook
+
+3. Output Files
+   - research_log.txt: Continuous research log
+   - output.txt: Formatted research reports
+   - full_research_log.txt: Complete tool outputs
+   - Timestamped individual research files
+
+### Error Handling and Recovery
+
+1. Rate Limiting
+   - Automatic backoff implementation
+   - Alternative source fallback
+   - Cached result usage
+
+2. Parsing Errors
+   - JSON cleanup mechanisms
+   - Raw text fallback
+   - Strange character removal
+
+3. Tool Failures
+   - Fallback implementations
+   - Alternative tool selection
+   - Error reporting and logging
+
+### Best Practices
+
+1. Query Formulation
+   - Be specific with research questions
+   - Include relevant context
+   - Specify time periods if applicable
+
+2. Tool Selection
+   - Use basic tools for simple facts
+   - Use advanced tools for complex analysis
+   - Combine multiple tools for comprehensive research
+
+3. Output Management
+   - Review generated reports
+   - Check source citations
+   - Verify tool usage logs
+
+### Limitations and Considerations
+
+1. Rate Limits
+   - DuckDuckGo search restrictions
+   - API call frequency limits
+   - Processing time constraints
+
+2. Content Access
+   - Website blocking detection
+   - CAPTCHA handling
+   - JavaScript-dependent content
+
+3. Processing Limits
+   - Text length restrictions
+   - Analysis depth constraints
+   - Tool combination limitations
+
+### Future Enhancements
+
+1. Planned Improvements
+   - Additional data sources
+   - Enhanced analysis capabilities
+   - Improved error handling
+   - Better rate limit management
+
+2. Potential Extensions
+   - Custom tool development
+   - Additional output formats
+   - Enhanced visualization
+   - API endpoint creation
+
+### Troubleshooting
+
+1. Common Issues
+   - Rate limit errors
+   - Parsing failures
+   - Tool availability
+   - Output formatting
+
+2. Solutions
+   - Implement waiting periods
+   - Use alternative tools
+   - Check environment setup
+   - Verify API keys
+
+### Support and Maintenance
+
+1. Code Updates
+   - Regular dependency updates
+   - API compatibility checks
+   - Tool functionality verification
+
+2. Documentation
+   - Keep README updated
+   - Document new features
+   - Update usage examples
+
+### Security Considerations
+
+1. API Key Management
+   - Use environment variables
+   - Regular key rotation
+   - Access restriction
+
+2. Data Handling
+   - Secure storage
+   - Privacy protection
+   - Output sanitization
+
+### Contributing Guidelines
+
+1. Code Standards
+   - Follow PEP 8
+   - Document functions
+   - Include type hints
+   - Write unit tests
+
+2. Pull Requests
+   - Clear descriptions
+   - Test coverage
+   - Documentation updates
+   - Change justification 

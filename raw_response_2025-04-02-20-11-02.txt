@@ -1,0 +1,1 @@
+{'query': 'What can I help you with today?what are the diffrent interpretations of the bhagwat geeta and how does it relate to tech in todays time and world. dont be superficial and dumb. use your iq, eq, aptitude, ', 'output': 'DOIs'}

@@ -1,0 +1,29 @@
+=== RESEARCH REPORT ===
+TOPIC: What can I help you with today?what are the diffrent interpretations of the bhagwat geeta and how does it relate to tech in todays time and world. dont be superficial and dumb. use your iq, eq, aptitude, 
+--------------------------------------------------------------------------------
+
+SUMMARY:
+The research assistant collected information but couldn't format it properly. Here's what was found:
+
+DOIs...
+
+KEY FINDINGS:
+1. Information was gathered but could not be properly structured
+
+ANALYSIS:
+The assistant searched for information on the topic, but the response format was not compatible with the expected structure.
+
+CONCLUSIONS:
+The information is available in the raw response file for manual review.
+
+LIMITATIONS:
+Response could not be parsed into the expected format.
+
+SOURCES:
+
+TOOLS USED:
+1. Error recovery
+
+FOLLOW-UP QUESTIONS:
+1. Could you ask a more specific question?
+2. Would you like to focus on a particular aspect of this topic?
