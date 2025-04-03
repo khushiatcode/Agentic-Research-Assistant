@@ -102,13 +102,13 @@ This project implements an advanced AI research assistant that combines multiple
 
 1. Required Environment Variables
    ```
-   DEEPSEEK_API_KEY=your-api-key
-   WEATHER_API_KEY=your-weather-api-key
+   DEEPSEEK_API_KEY=<your-api-key>
+   WEATHER_API_KEY=<your-weather-api-key>
+   OPENAI_API_KEY=<your-openai-key>
    ```
 
 2. Optional Environment Variables
    ```
-   OPENAI_API_KEY=your-openai-key
    ANTHROPIC_API_KEY=your-anthropic-key
    ```
 
@@ -247,3 +247,5 @@ This project implements an advanced AI research assistant that combines multiple
    - Test coverage
    - Documentation updates
    - Change justification 
+
+Note: Replace <your-api-key> with your actual API keys in the .env file. Never commit API keys to version control. 

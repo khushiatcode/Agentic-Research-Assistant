@@ -1,34 +1,52 @@
-# AI Research Assistant
+# Agentic Research Assistant
 
-An advanced AI-powered research assistant that combines multiple information sources and specialized tools to answer complex research questions.
-
-## Features
-
-- Comprehensive web search with intelligent rate limiting
-- Wikipedia integration
-- News and Reddit data retrieval
-- Advanced analysis tools for complex queries
-- Automatic research report generation
-- Clean, user-friendly Streamlit interface
+An autonomous AI research assistant that leverages multiple tools including web search, Wikipedia, and advanced reasoning capabilities for comprehensive research and analysis.
 
 ## Setup
 
-1. Clone the repository:
+1. Clone the repository
 ```bash
-git clone <your-repo-url>
-cd ai-research-assistant
+git clone https://github.com/khushiatcode/Agentic-Research-Assistant.git
+cd Agentic-Research-Assistant
 ```
 
-2. Install dependencies:
+2. Create a virtual environment and install dependencies
 ```bash
+python -m venv venv
+source venv/bin/activate  # On Windows use: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-3. Set up environment variables:
-Create a `.env` file with:
-```
+3. Create a `.env` file in the root directory with your API keys:
+```bash
+# Create .env file
+touch .env  # On Windows use: type nul > .env
+
+# Add your API keys to .env file:
 DEEPSEEK_API_KEY=your_api_key_here
+WEATHER_API_KEY=your_weather_api_key_here
+OPENAI_API_KEY=your_openai_key_here
+GOOGLE_API_KEY=your_google_api_key_here
+GOOGLE_CSE_ID=your_google_cse_id_here
 ```
+
+4. Run the application
+```bash
+python main.py
+```
+
+## Features
+
+- Advanced AI-powered research capabilities
+- Web search integration
+- Weather information lookup
+- News aggregation
+- Natural language processing
+- Comprehensive documentation analysis
+
+## Security Note
+
+This project uses environment variables for API keys and sensitive information. Never commit your `.env` file or expose your API keys in the code.
 
 ## Running Locally
 
@@ -36,28 +54,3 @@ Run the Streamlit app:
 ```bash
 streamlit run streamlit_app.py
 ```
-
-## Deployment
-
-The app can be deployed on:
-- Streamlit Cloud
-- Hugging Face Spaces
-- Railway.app
-- Render.com
-
-See deployment instructions in the documentation.
-
-## Usage
-
-1. Enter your DeepSeek API key in the sidebar
-2. Type your research query in the text area
-3. Click "Start Research"
-4. View results and download reports
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-MIT License 
