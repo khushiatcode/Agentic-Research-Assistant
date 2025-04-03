@@ -21,4 +21,14 @@ ENV/
 
 # OS
 .DS_Store
-Thumbs.db 
+Thumbs.db
+
+# Generated files and logs
+*.log
+raw_response_*.txt
+formatted_response_*.txt
+research_*.txt
+output.txt
+research_log.txt
+full_research_log.txt
+full_research_output.txt 
