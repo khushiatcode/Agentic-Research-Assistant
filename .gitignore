@@ -12,6 +12,10 @@ __pycache__/
 venv/
 env/
 ENV/
+.venv
+.env
+.env.local
+.env.*.local
 
 # IDE
 .vscode/
@@ -31,4 +35,9 @@ research_*.txt
 output.txt
 research_log.txt
 full_research_log.txt
-full_research_output.txt 
+full_research_output.txt
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/ 
